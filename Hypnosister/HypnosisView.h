@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  HypnosisView.h
 //  Hypnosister
 //
 //  Created by Fernando Castor on 07/01/15.
@@ -7,12 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "HypnosisView.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
+@interface HypnosisView : UIView
 
 @end
-

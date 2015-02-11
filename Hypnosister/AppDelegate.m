@@ -16,7 +16,34 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame: [[UIScreen mainScreen] bounds]];
+    // In the line above, "bounds" has type CGRect.
+    
+    CGRect firstFrame = self.window.bounds;
+/*    firstFrame.origin.x = 160;
+    firstFrame.origin.y = 240;
+    firstFrame.size.height = 150;
+    firstFrame.size.width = 100;
+*/
+//    CGRect secondFrame = CGRectMake(20, 30, 50, 50);
+    
+    // Alternatively, we could have used the CGRectMake
+    // C function, defined in CGGeometry.h.
+    // firstFrame = CGRectMake(160, 240, 100, 150);
+    
+    HypnosisView *hypView = [[HypnosisView alloc] initWithFrame:firstFrame];
+    
+//    HypnosisView *secondView = [[HypnosisView alloc] initWithFrame:secondFrame];
+    
+//    secondView.backgroundColor = [UIColor blueColor];
+
+//    hypView.backgroundColor = [UIColor whiteColor];
+    [self.window addSubview:hypView];
+//    [hypView addSubview:secondView];
+    
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+
     return YES;
 }
 

@@ -10,10 +10,11 @@
 		EDD1B5E41A5DB5AB00CB3823 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD1B5E31A5DB5AB00CB3823 /* main.m */; };
 		EDD1B5E71A5DB5AB00CB3823 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD1B5E61A5DB5AB00CB3823 /* AppDelegate.m */; };
 		EDD1B5EA1A5DB5AB00CB3823 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD1B5E91A5DB5AB00CB3823 /* ViewController.m */; };
-		EDD1B5ED1A5DB5AB00CB3823 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDD1B5EB1A5DB5AB00CB3823 /* Main.storyboard */; };
 		EDD1B5EF1A5DB5AB00CB3823 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDD1B5EE1A5DB5AB00CB3823 /* Images.xcassets */; };
 		EDD1B5F21A5DB5AB00CB3823 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDD1B5F01A5DB5AB00CB3823 /* LaunchScreen.xib */; };
 		EDD1B5FE1A5DB5AB00CB3823 /* HypnosisterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD1B5FD1A5DB5AB00CB3823 /* HypnosisterTests.m */; };
+		EDD1B6091A5DC14600CB3823 /* HypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD1B6081A5DC14600CB3823 /* HypnosisView.m */; };
+		EDD1B60B1A602C7300CB3823 /* mrmr.png in Resources */ = {isa = PBXBuildFile; fileRef = EDD1B60A1A602C7300CB3823 /* mrmr.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +35,14 @@
 		EDD1B5E61A5DB5AB00CB3823 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		EDD1B5E81A5DB5AB00CB3823 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		EDD1B5E91A5DB5AB00CB3823 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		EDD1B5EC1A5DB5AB00CB3823 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EDD1B5EE1A5DB5AB00CB3823 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EDD1B5F11A5DB5AB00CB3823 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		EDD1B5F71A5DB5AB00CB3823 /* HypnosisterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HypnosisterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDD1B5FC1A5DB5AB00CB3823 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDD1B5FD1A5DB5AB00CB3823 /* HypnosisterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HypnosisterTests.m; sourceTree = "<group>"; };
+		EDD1B6071A5DC14600CB3823 /* HypnosisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HypnosisView.h; sourceTree = "<group>"; };
+		EDD1B6081A5DC14600CB3823 /* HypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HypnosisView.m; sourceTree = "<group>"; };
+		EDD1B60A1A602C7300CB3823 /* mrmr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mrmr.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +84,13 @@
 		EDD1B5E01A5DB5AB00CB3823 /* Hypnosister */ = {
 			isa = PBXGroup;
 			children = (
+				EDD1B60A1A602C7300CB3823 /* mrmr.png */,
 				EDD1B5E51A5DB5AB00CB3823 /* AppDelegate.h */,
 				EDD1B5E61A5DB5AB00CB3823 /* AppDelegate.m */,
+				EDD1B6071A5DC14600CB3823 /* HypnosisView.h */,
+				EDD1B6081A5DC14600CB3823 /* HypnosisView.m */,
 				EDD1B5E81A5DB5AB00CB3823 /* ViewController.h */,
 				EDD1B5E91A5DB5AB00CB3823 /* ViewController.m */,
-				EDD1B5EB1A5DB5AB00CB3823 /* Main.storyboard */,
 				EDD1B5EE1A5DB5AB00CB3823 /* Images.xcassets */,
 				EDD1B5F01A5DB5AB00CB3823 /* LaunchScreen.xib */,
 				EDD1B5E11A5DB5AB00CB3823 /* Supporting Files */,
@@ -199,9 +204,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDD1B5ED1A5DB5AB00CB3823 /* Main.storyboard in Resources */,
 				EDD1B5F21A5DB5AB00CB3823 /* LaunchScreen.xib in Resources */,
 				EDD1B5EF1A5DB5AB00CB3823 /* Images.xcassets in Resources */,
+				EDD1B60B1A602C7300CB3823 /* mrmr.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDD1B5EA1A5DB5AB00CB3823 /* ViewController.m in Sources */,
+				EDD1B6091A5DC14600CB3823 /* HypnosisView.m in Sources */,
 				EDD1B5E71A5DB5AB00CB3823 /* AppDelegate.m in Sources */,
 				EDD1B5E41A5DB5AB00CB3823 /* main.m in Sources */,
 			);
@@ -244,14 +250,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EDD1B5EB1A5DB5AB00CB3823 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EDD1B5EC1A5DB5AB00CB3823 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EDD1B5F01A5DB5AB00CB3823 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
